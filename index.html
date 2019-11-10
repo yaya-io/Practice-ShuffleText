@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>ShuffleElementText.js Example</title>
+  <script src="./shuffle-text.js"></script>
+</head>
+<body>
+<h1 id="myText">This is a ShuffleText.js Examle</h1>
+<h1 id="myText2">これはシャッフルテキストのサンプルです</h1>
+<h1 id="myText3">これはシャッフルテキストのサンプルです(duration300)</h1>
+<script>
+  var text = new ShuffleText(document.getElementById('myText'));
+  text.start();
+  var text2 = new ShuffleText(document.getElementById('myText2'));
+  text2.sourceRandomCharacter ="あいうえおかきくけこさしすせそたちつてとなにぬねの";
+  text2.start();
+  var text3 = new ShuffleText(document.getElementById('myText3'));
+  text3.duration = 200;
+  text3.start();
+</script>
+</body>
+</html>
